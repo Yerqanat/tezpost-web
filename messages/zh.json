@@ -11,6 +11,11 @@
   "home": {
     "title": "使用 Tezpost 快速收货",
     "content": "Tezpost 帮助您更快地追踪、管理和接收包裹——全程透明，并提供本地支持。",
-    "CTA": "下载免费应用"
+    "CTA": "下载免费应用",
+    "delivered-shipments": "已交付货物",
+    "delivered-weight": "交付重量",
+    "title-2": "我们的服务让成千上万的客户感到满意。",
+    "information": "信息",
+    "marketplace": "软件商城"
   }
 }

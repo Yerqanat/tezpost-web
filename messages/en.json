@@ -11,6 +11,11 @@
   "home": {
     "title": "Use Tezpost to get your delivery fast",
     "content": "Tezpost helps you track, manage, and receive parcels faster — with full transparency and local support.",
-    "CTA": "Download free APP"
+    "CTA": "Download free APP",
+    "delivered-shipments": "Delivered shipment",
+    "delivered-weight": "Delivered weight",
+    "title-2": "We made thousands of customers happy with our services.",
+    "information": "Information",
+    "marketplace": "Marketplace"
   }
 }

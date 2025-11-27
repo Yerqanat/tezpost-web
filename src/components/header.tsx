@@ -9,8 +9,8 @@ import { Separator } from "./ui/separator";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "../i18n/navigation";
 
-import Language from "./language";
-import SearchShipment from "./Search";
+import Language from "../components/language";
+import SearchShipment from "../components/Search";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import {
@@ -19,7 +19,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/src/components/ui/dialog";
 import {
   Drawer,
   DrawerContent,
@@ -27,10 +27,10 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
+} from "@/src/components/ui/drawer";
+import { Button } from "@/src/components/ui/button";
+import { Switch } from "@/src/components/ui/switch";
+import { Label } from "@/src/components/ui/label";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
