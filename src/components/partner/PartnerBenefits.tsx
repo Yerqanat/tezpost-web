@@ -4,62 +4,59 @@ import {
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
-import { Banknote, Users, MapPin, TrendingUp } from "lucide-react";
-
-const benefits = [
-  {
-    icon: Banknote,
-    title: "Additional Income",
-    description:
-      "Earn commission on every package processed through your point.",
-  },
-  {
-    icon: Users,
-    title: "New Customers",
-    description:
-      "Increase foot traffic to your existing business with Jelpost clients.",
-  },
-  {
-    icon: MapPin,
-    title: "Exclusive Territory",
-    description:
-      "Be the only authorized partner in your specific district or area.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Business Growth",
-    description: "Grow with us as e-commerce continues to expand rapidly.",
-  },
-];
+import { TrendingUp, Users, Map, BarChart3 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function PartnerBenefits() {
+  const t = useTranslations("partner");
+
+  const benefits = [
+    {
+      icon: TrendingUp,
+      title: t("benefits.income.title"),
+      description: t("benefits.income.desc"),
+    },
+    {
+      icon: Users,
+      title: t("benefits.customers.title"),
+      description: t("benefits.customers.desc"),
+    },
+    {
+      icon: Map,
+      title: t("benefits.territory.title"),
+      description: t("benefits.territory.desc"),
+    },
+    {
+      icon: BarChart3,
+      title: t("benefits.growth.title"),
+      description: t("benefits.growth.desc"),
+    },
+  ];
+
   return (
-    <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+    <section className="py-20 bg-slate-50 dark:bg-slate-900/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Why Partner with Us?</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {t("benefits.title")}
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We offer a mutually beneficial partnership model designed to help
-            you succeed.
+            {t("benefits.subtitle")}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
-            <Card
+            <div
               key={index}
-              className="border-none shadow-md hover:shadow-lg transition-shadow"
+              className="bg-background p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             >
-              <CardHeader className="pb-2">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">{benefit.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{benefit.description}</p>
-              </CardContent>
-            </Card>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <benefit.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
+              <p className="text-muted-foreground">{benefit.description}</p>
+            </div>
           ))}
         </div>
       </div>

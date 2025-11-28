@@ -1,42 +1,49 @@
 import { CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function PartnerRequirements() {
+  const t = useTranslations("partner");
+
   const premisesRequirements = [
-    "Ground floor location with easy access",
-    "Minimum area of 15 sq. meters",
-    "Internet connection and computer",
-    "Space for branding materials",
-    "Storage area for packages",
+    t("requirements.premises.list.0"),
+    t("requirements.premises.list.1"),
+    t("requirements.premises.list.2"),
+    t("requirements.premises.list.3"),
+    t("requirements.premises.list.4"),
   ];
 
   const partnerRequirements = [
-    "Registered business entity (IE or LLP)",
-    "Customer service orientation",
-    "Ability to work with cash/payments",
-    "Adherence to operating hours",
+    t("requirements.partner.list.0"),
+    t("requirements.partner.list.1"),
+    t("requirements.partner.list.2"),
+    t("requirements.partner.list.3"),
   ];
 
   return (
-    <section id="requirements" className="py-16 bg-slate-50 dark:bg-slate-900/50">
+    <section
+      id="requirements"
+      className="py-20 bg-slate-50 dark:bg-slate-900/50"
+    >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Requirements</h2>
-          <p className="text-muted-foreground">
-            What we look for in our potential partners.
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {t("requirements.title")}
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            {t("requirements.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Premises Requirements */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-              <span className="bg-primary/10 text-primary w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
-              Premises Requirements
+          <div className="bg-background p-8 rounded-2xl shadow-sm">
+            <h3 className="text-2xl font-bold mb-6">
+              {t("requirements.premises.title")}
             </h3>
             <ul className="space-y-4">
               {premisesRequirements.map((req, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
                   <span>{req}</span>
                 </li>
               ))}
@@ -44,15 +51,14 @@ export default function PartnerRequirements() {
           </div>
 
           {/* Partner Requirements */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-              <span className="bg-primary/10 text-primary w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
-              Partner Requirements
+          <div className="bg-background p-8 rounded-2xl shadow-sm">
+            <h3 className="text-2xl font-bold mb-6">
+              {t("requirements.partner.title")}
             </h3>
             <ul className="space-y-4">
               {partnerRequirements.map((req, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
                   <span>{req}</span>
                 </li>
               ))}

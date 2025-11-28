@@ -1,21 +1,154 @@
 {
   "header": {
     "home": "首页",
-    "track-code": "物流号",
-    "tariffs": "价格",
-    "partners": "合伙人",
-    "search-code": "搜索物流号",
-    "sign-in": "登陆",
+    "track-code": "追踪代码",
+    "tariffs": "运费",
+    "partners": "合作伙伴",
+    "search-code": "搜索追踪代码",
+    "sign-in": "登录",
     "theme": "主题"
   },
   "home": {
-    "title": "使用 Tezpost 快速收货",
-    "content": "Tezpost 帮助您更快地追踪、管理和接收包裹——全程透明，并提供本地支持。",
-    "CTA": "下载免费应用",
-    "delivered-shipments": "已交付货物",
-    "delivered-weight": "交付重量",
+    "title": "使用 Jelpost 快速收货",
+    "content": "Jelpost 帮助您更快地追踪、管理和接收包裹 —— 全程透明并提供本地支持。",
+    "CTA": "下载免费 APP",
+    "delivered-shipments": "已送达包裹",
+    "delivered-weight": "已送达重量",
     "title-2": "我们的服务让成千上万的客户感到满意。",
     "information": "信息",
-    "marketplace": "软件商城"
+    "marketplace": "市场",
+    "stats": {
+      "shipments": "已送达包裹",
+      "weight": "已送达重量",
+      "clients": "满意客户",
+      "countries": "服务国家"
+    },
+    "features": {
+      "title": "为什么选择 Jelpost?",
+      "subtitle": "我们将技术与物流相结合，提供最佳的运输体验。",
+      "fast": { "title": "快速配送", "desc": "优化路线，确保您的包裹每次都准时送达。" },
+      "secure": { "title": "安全处理", "desc": "我们小心处理每一个包裹，确保其完好无损地送达。" },
+      "tracking": { "title": "实时追踪", "desc": "确切知道您的包裹在旅途中的每一步位置。" },
+      "prices": { "title": "有竞争力的价格", "desc": "陆运和空运的最佳市场价格。" }
+    },
+    "marketplaces": {
+      "title": "从顶级市场购物",
+      "subtitle": "我们从所有主要的中国电子商务平台直接送货上门。"
+    },
+    "process": {
+      "title": "如何运作",
+      "subtitle": "从中国接收包裹到哈萨克斯坦的简单步骤。",
+      "step1": { "title": "1. 注册", "desc": "创建一个帐户以获取您在中国的个人仓库地址。" },
+      "step2": { "title": "2. 在线购物", "desc": "使用您的新地址在淘宝、拼多多或任何其他商店购物。" },
+      "step3": { "title": "3. 发送到仓库", "desc": "卖家将您的货物发送到我们的仓库。我们接收并检查它们。" },
+      "step4": { "title": "4. 在阿拉木图接收", "desc": "我们将您的包裹运送到阿拉木图。自提或安排送货上门。" }
+    },
+    "info": {
+      "title": "信息中心",
+      "subtitle": "关于使用 Jelpost 您需要知道的一切。",
+      "rules": { "title": "收货规则", "desc": "您需要在 Jelpost 应用程序中注册您的个人数据。" },
+      "faq": { "title": "热门问题", "desc": "Jelpost 是一家哈萨克斯坦 IT 物流公司，提供从中国到哈萨克斯坦、乌兹别克斯坦和吉尔吉斯斯坦的包裹递送服务。" },
+      "account": { "title": "个人账户，奖金", "desc": "如何充值我的个人账户？" },
+      "order": { "title": "订单", "desc": "我的商品没有显示在 Jana Post 应用程序中，为什么？" },
+      "return": { "title": "退货", "desc": "在这篇文章中，您将学习如何进行退货。" }
+    },
+    "cta": {
+      "title": "准备好开始发货了吗？",
+      "subtitle": "加入成千上万信任 Jelpost 满足其递送需求的满意客户。",
+      "button": "计算运费"
+    }
+  },
+  "partner": {
+    "hero": {
+      "title": "成为 <span class='text-primary'>Jelpost</span> 合作伙伴",
+      "subtitle": "加入我们不断壮大的物流合作伙伴网络。通过在您所在的城市开设提货点来赚取额外收入。",
+      "apply": "立即申请",
+      "requirements": "查看要求"
+    },
+    "benefits": {
+      "title": "为什么要与我们合作？",
+      "subtitle": "我们提供旨在帮助您成功的互利合作伙伴模式。",
+      "income": { "title": "额外收入", "desc": "为您点处理的每个包裹赚取佣金。" },
+      "customers": { "title": "新客户", "desc": "通过 Jelpost 客户增加您现有业务的人流量。" },
+      "territory": { "title": "独家区域", "desc": "成为您特定地区或区域的唯一授权合作伙伴。" },
+      "growth": { "title": "业务增长", "desc": "随着电子商务的快速扩张，与我们一起成长。" }
+    },
+    "steps": {
+      "title": "如何成为合作伙伴",
+      "subtitle": "开始您与 Jelpost 旅程的三个简单步骤。",
+      "step1": { "title": "1. 准备场所", "desc": "确保您的位置符合我们的品牌和运营标准。" },
+      "step2": { "title": "2. 培训", "desc": "完成我们针对合作伙伴的综合培训计划。" },
+      "step3": { "title": "3. 激活", "desc": "签署协议并立即开始接收货物。" }
+    },
+    "requirements": {
+      "title": "要求",
+      "subtitle": "我们在寻找什么样的潜在合作伙伴。",
+      "premises": {
+        "title": "场所要求",
+        "list": [
+          "位于一楼，交通便利",
+          "最小面积 15 平方米",
+          "互联网连接和电脑",
+          "品牌材料空间",
+          "包裹存储区"
+        ]
+      },
+      "partner": {
+        "title": "合作伙伴要求",
+        "list": [
+          "注册商业实体（个体户或有限责任公司）",
+          "客户服务导向",
+          "处理现金/付款的能力",
+          "遵守营业时间"
+        ]
+      }
+    },
+    "form": {
+      "title": "留下申请",
+      "subtitle": "填写表格，我们将尽快与您联系。",
+      "name": "全名",
+      "phone": "电话号码",
+      "city": "城市",
+      "submit": "发送申请"
+    }
+  },
+  "tracking": {
+    "title": "追踪您的包裹",
+    "subtitle": "在下方输入追踪号码以查看您包裹的当前状态。"
+  },
+  "tariffs": {
+    "title": "运费",
+    "subtitle": "透明定价，无隐藏费用。选择最适合您的路线。",
+    "deliveryTime": "配送时间",
+    "origin": "中国",
+    "destination": "阿拉木图",
+    "land": "陆运",
+    "air": "空运",
+    "days": "天",
+    "calculate": "计算运费",
+    "features": {
+      "repackaging": "免费重新包装",
+      "tracking": "实时追踪",
+      "storage": "仓库存储（7天免费）",
+      "insurance": "不含保险"
+    },
+    "calculator": {
+      "title": "运费计算器",
+      "description": "计算 {type} 递送的预计费用。价格：${price} / {unit}。",
+      "weight": "重量",
+      "calculate": "计算",
+      "total": "预计总额"
+    }
+  },
+  "footer": {
+    "description": "您从中国到中亚快速安全物流的可靠合作伙伴。",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "contact": "联系我们",
+    "warehousing": "仓储（即将推出）",
+    "customs": "清关",
+    "rights": "© {year} Jelpost. 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   }
 }

@@ -9,13 +9,146 @@
     "theme": "Theme"
   },
   "home": {
-    "title": "Use Tezpost to get your delivery fast",
-    "content": "Tezpost helps you track, manage, and receive parcels faster — with full transparency and local support.",
+    "title": "Use Jelpost to get your delivery fast",
+    "content": "Jelpost helps you track, manage, and receive parcels faster — with full transparency and local support.",
     "CTA": "Download free APP",
     "delivered-shipments": "Delivered shipment",
     "delivered-weight": "Delivered weight",
     "title-2": "We made thousands of customers happy with our services.",
     "information": "Information",
-    "marketplace": "Marketplace"
+    "marketplace": "Marketplace",
+    "stats": {
+      "shipments": "Delivered Shipments",
+      "weight": "Delivered Weight",
+      "clients": "Happy Clients",
+      "countries": "Countries Served"
+    },
+    "features": {
+      "title": "Why Choose Jelpost?",
+      "subtitle": "We combine technology and logistics to provide the best shipping experience.",
+      "fast": { "title": "Fast Delivery", "desc": "Optimized routes to ensure your packages arrive on time, every time." },
+      "secure": { "title": "Secure Handling", "desc": "We treat every package with care, ensuring it reaches you in perfect condition." },
+      "tracking": { "title": "Real-time Tracking", "desc": "Know exactly where your shipment is at every step of the journey." },
+      "prices": { "title": "Competitive Prices", "desc": "Best rates in the market for both land and air delivery options." }
+    },
+    "marketplaces": {
+      "title": "Shop from Top Marketplaces",
+      "subtitle": "We deliver from all major Chinese e-commerce platforms directly to your doorstep."
+    },
+    "process": {
+      "title": "How It Works",
+      "subtitle": "Simple steps to get your packages from China to Kazakhstan.",
+      "step1": { "title": "1. Register", "desc": "Create an account to get your personal warehouse address in China." },
+      "step2": { "title": "2. Shop Online", "desc": "Buy from Taobao, Pinduoduo, or any other store using your new address." },
+      "step3": { "title": "3. Send to Warehouse", "desc": "The seller ships your goods to our warehouse. We receive and check them." },
+      "step4": { "title": "4. Receive in Almaty", "desc": "We deliver your package to Almaty. Pick it up or get home delivery." }
+    },
+    "info": {
+      "title": "Information Center",
+      "subtitle": "Everything you need to know about using Jelpost.",
+      "rules": { "title": "Rules for receiving goods", "desc": "You need to register your personal data in the Jelpost application." },
+      "faq": { "title": "Top Questions", "desc": "Jelpost is a Kazakhstani IT logistics company delivering parcels from China." },
+      "account": { "title": "Personal Account, Bonuses", "desc": "How do I top up my personal account?" },
+      "order": { "title": "Order", "desc": "My product is not showing up in the Jana Post app, why?" },
+      "return": { "title": "Return", "desc": "In this article you will learn how to make a return." }
+    },
+    "cta": {
+      "title": "Ready to start shipping?",
+      "subtitle": "Join thousands of happy customers who trust Jelpost for their delivery needs.",
+      "button": "Calculate Shipping Cost"
+    }
+  },
+  "partner": {
+    "hero": {
+      "title": "Become a <span class='text-primary'>Jelpost</span> Partner",
+      "subtitle": "Join our growing network of logistics partners. Earn additional income by opening a pickup point in your city.",
+      "apply": "Apply Now",
+      "requirements": "View Requirements"
+    },
+    "benefits": {
+      "title": "Why Partner with Us?",
+      "subtitle": "We offer a mutually beneficial partnership model designed to help you succeed.",
+      "income": { "title": "Additional Income", "desc": "Earn commission on every package processed through your point." },
+      "customers": { "title": "New Customers", "desc": "Increase foot traffic to your existing business with Jelpost clients." },
+      "territory": { "title": "Exclusive Territory", "desc": "Be the only authorized partner in your specific district or area." },
+      "growth": { "title": "Business Growth", "desc": "Grow with us as e-commerce continues to expand rapidly." }
+    },
+    "steps": {
+      "title": "How to Become a Partner?",
+      "subtitle": "Three simple steps to start your journey with Jelpost.",
+      "step1": { "title": "1. Prepare Premises", "desc": "Ensure your location meets our branding and operational standards." },
+      "step2": { "title": "2. Training", "desc": "Complete our comprehensive training program for partners." },
+      "step3": { "title": "3. Activation", "desc": "Sign the agreement and start accepting shipments immediately." }
+    },
+    "requirements": {
+      "title": "Requirements",
+      "subtitle": "What we look for in our potential partners.",
+      "premises": {
+        "title": "Premises Requirements",
+        "list": [
+          "Ground floor location with easy access",
+          "Minimum area of 15 sq. meters",
+          "Internet connection and computer",
+          "Space for branding materials",
+          "Storage area for packages"
+        ]
+      },
+      "partner": {
+        "title": "Partner Requirements",
+        "list": [
+          "Registered business entity (IE or LLP)",
+          "Customer service orientation",
+          "Ability to work with cash/payments",
+          "Adherence to operating hours"
+        ]
+      }
+    },
+    "form": {
+      "title": "Leave a Request",
+      "subtitle": "Fill out the form and we will contact you shortly.",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "city": "City",
+      "submit": "Send Request"
+    }
+  },
+  "tracking": {
+    "title": "Track Your Shipment",
+    "subtitle": "Enter your tracking number below to see the current status of your shipment."
+  },
+  "tariffs": {
+    "title": "Tariffs",
+    "subtitle": "Transparent pricing with no hidden fees. Choose the route that suits you best.",
+    "deliveryTime": "Delivery Time",
+    "origin": "China",
+    "destination": "Almaty",
+    "land": "Land Delivery",
+    "air": "Air Delivery",
+    "days": "days",
+    "calculate": "Calculate Shipping",
+    "features": {
+      "repackaging": "Free repackaging",
+      "tracking": "Real-time tracking",
+      "storage": "Warehouse storage (7 days free)",
+      "insurance": "No insurance included"
+    },
+    "calculator": {
+      "title": "Shipping Calculator",
+      "description": "Calculate the estimated cost for {type} delivery. Price: ${price} / {unit}.",
+      "weight": "Weight",
+      "calculate": "Calculate",
+      "total": "Estimated Total"
+    }
+  },
+  "footer": {
+    "description": "Your reliable partner for fast and secure logistics from China to Central Asia.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Us",
+    "warehousing": "Warehousing (Coming Soon)",
+    "customs": "Customs Clearance",
+    "rights": "© {year} Jelpost. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

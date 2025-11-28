@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/src/i18n/routing";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Header from "@/src/components/header";
+import Footer from "@/src/components/Footer";
 
 const lobster = Lobster({
   variable: "--font-lobster",
@@ -61,6 +62,7 @@ export default async function RootLayout({ children, params }: Props) {
           >
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

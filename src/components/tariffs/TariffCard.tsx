@@ -1,16 +1,17 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
-import { Button } from "@/src/components/ui/button";
-import { Check, Plane, Truck } from "lucide-react";
+import { Check, Clock, Globe, ShieldCheck } from "lucide-react";
+import { ShippingCalculatorDialog } from "./ShippingCalculatorDialog";
+import { useTranslations } from "next-intl";
+import { Badge } from "../ui/badge";
 
 interface TariffCardProps {
-  type: string;
+  type: "land" | "air";
   origin: string;
   destination: string;
   price: string;
@@ -28,40 +29,47 @@ export default function TariffCard({
   deliveryTime,
   features,
 }: TariffCardProps) {
+  const t = useTranslations("tariffs");
+
   return (
     <Card className="w-full max-w-sm hover:shadow-lg transition-shadow duration-300">
-      <CardHeader className="text-center pb-2">
-        <div className="mx-auto bg-primary/10 p-3 rounded-full mb-4 w-fit">
-          {type === "land" ? (
-            <Truck className="w-6 h-6 text-primary" />
-          ) : (
-            <Plane className="w-6 h-6 text-primary" />
-          )}
+      <CardHeader>
+        <div className="flex justify-between items-start mb-2">
+          <Badge variant={type === "air" ? "default" : "secondary"}>
+            {type === "air" ? t("air") : t("land")}
+          </Badge>
+          <div className="flex items-center text-muted-foreground text-sm">
+            <Clock className="w-4 h-4 mr-1" />
+            {deliveryTime} {t("days")}
+          </div>
         </div>
-        <CardTitle className="text-xl font-bold">
-          {origin} <span className="text-muted-foreground mx-1">→</span> {destination}
+        <CardTitle className="text-2xl font-bold flex items-baseline">
+          {price}
+          <span className="text-base font-normal text-muted-foreground ml-1">
+            / {unit}
+          </span>
         </CardTitle>
-        <CardDescription>{features[0]}</CardDescription>
-      </CardHeader>
-      <CardContent className="text-center">
-        <div className="flex items-baseline justify-center gap-1 my-4">
-          <span className="text-4xl font-extrabold">{price}</span>
-          <span className="text-muted-foreground font-medium">/ {unit}</span>
+        <div className="flex items-center text-sm text-muted-foreground mt-2">
+          <Globe className="w-4 h-4 mr-1" />
+          {origin} → {destination}
         </div>
-        <p className="text-sm text-muted-foreground mb-6">
-          Estimated delivery: <span className="font-semibold text-foreground">{deliveryTime}</span>
-        </p>
-        <ul className="space-y-3 text-left">
+      </CardHeader>
+      <CardContent>
+        <ul className="space-y-3">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-primary shrink-0" />
-              <span>{feature}</span>
+            <li key={index} className="flex items-start">
+              <Check className="w-5 h-5 text-green-500 mr-2 shrink-0" />
+              <span className="text-sm">{feature}</span>
             </li>
           ))}
         </ul>
       </CardContent>
       <CardFooter>
-        <Button className="w-full font-semibold">Calculate Shipping</Button>
+        <ShippingCalculatorDialog
+          pricePerUnit={parseFloat(price.replace("$", ""))}
+          unit={unit}
+          type={type === "air" ? t("air") : t("land")}
+        />
       </CardFooter>
     </Card>
   );
