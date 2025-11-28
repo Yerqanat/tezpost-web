@@ -73,8 +73,8 @@ export default function Header() {
       <div className="px-2 md:px-0 max-w-5xl h-16 mx-auto flex items-center gap-2 md:gap-8">
         <Link className="mr-auto md:mr-0" href="/">
           <Image
-            src="/tezpost-logo.svg"
-            alt="Tezpost logo"
+            src="/jelpost-logo.svg"
+            alt="Jelpost logo"
             width={120}
             height={30}
             priority

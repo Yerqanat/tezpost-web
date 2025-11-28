@@ -45,7 +45,7 @@ export default function Home() {
               <div className="rounded-4xl shadow-[0_2px_10px_2px_rgba(0,0,0,0.1)]">
                 <Image
                   src="/hero-app.svg"
-                  alt="Tezpost app"
+                  alt="Jelpost app"
                   width={200}
                   height={500}
                   className="object-contain"
@@ -93,12 +93,12 @@ export default function Home() {
             <InformationBox
               icon={<Store />}
               title="Бөлімшеден тауар алу ережелері"
-              subtitle="Tezpost қосымшасында жеке деректеріңіз тіркеліп тұруы қажет."
+              subtitle="Jelpost қосымшасында жеке деректеріңіз тіркеліп тұруы қажет."
             />
             <InformationBox
               icon={<MessageCircleQuestionMark />}
               title="Топ сұрақ"
-              subtitle="Tezpost– Қытайдан Қазақстан, Өзбекстан және Қырғызстанға сәлемдемелер жеткізетін қазақстандық IT-логистикалық компания."
+              subtitle="Jelpost– Қытайдан Қазақстан, Өзбекстан және Қырғызстанға сәлемдемелер жеткізетін қазақстандық IT-логистикалық компания."
             />
             <InformationBox
               icon={<CircleDollarSign />}

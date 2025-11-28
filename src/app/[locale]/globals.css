@@ -52,9 +52,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.5835 0.2381 28.32); /* Tezpost signature red */
+  --primary: oklch(0.6842 0.1842 48.74); /* Jelpost signature red */
   --primary-foreground: oklch(0.99 0 0); /* white text */
-  --secondary: oklch(0.4038 0.1535 265.24); /* Tezpost blue-violet */
+  --secondary: oklch(0.3049 0.104757 256.1638); /* Jelpost blue-violet */
   --secondary-foreground: oklch(0.99 0 0); /* white text */
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -86,9 +86,9 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.5835 0.2381 28.32); /* keep brand orange vibrant */
+  --primary: oklch(0.6842 0.1842 48.74); /* keep brand orange vibrant */
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.4038 0.1535 265.24);
+  --secondary: oklch(0.3049 0.104757 256.1638);
   --secondary-foreground: oklch(0.99 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
